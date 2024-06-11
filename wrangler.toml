@@ -1,3 +1,5 @@
+[vars]
+NEON_DB = "postgresql://test_owner:bx3JYsAaQPv1@ep-floral-dust-a4wfsn28.us-east-1.aws.neon.tech/test?sslmode=require"
 #:schema node_modules/wrangler/config-schema.json
 name = "restapi"
 main = "src/index.ts"

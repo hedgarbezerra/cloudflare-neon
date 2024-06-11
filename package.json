@@ -2,13 +2,21 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx migrate.ts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.9.3",
+    "drizzle-orm": "^0.31.2",
     "hono": "^4.4.4"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240605.0",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.22.7",
+    "postgres": "^3.4.4",
+    "tsx": "^4.15.2",
     "wrangler": "^3.57.2"
   }
 }
